@@ -1,5 +1,13 @@
-# Báo Cáo Phân Loại Tidal Disruption Events (TDE) với Machine Learning
+# MALLORN Astronomical Classification Challenge
+## Thông tin nhóm
 
+- **Tên nhóm**: Nhóm 23 - 2526I_INT3405E_4
+- **Thành viên**:
+  - Nguyễn Văn Mạnh – 23021619
+  - Lò Châu Minh – 23021627
+  - Trần Thành Nguyên – <vai trò>
+
+---
 ## 1. Giới thiệu
 
 ### 1.1. Bối cảnh bài toán
