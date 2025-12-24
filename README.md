@@ -161,24 +161,6 @@ Các đặc trưng tổng hợp domain-specific:
   - max_depth: [4, 12]
   - reg_alpha, reg_lambda: [0.01, 10] (log-scale)
 
-#### 3.4.2. Best parameters (Trial #42)
-```python
-{
-    'num_leaves': 76,
-    'learning_rate': 0.0239,
-    'feature_fraction': 0.7705,
-    'bagging_fraction': 0.6763,
-    'min_child_samples': 47,
-    'min_child_weight': 0.00134,
-    'reg_alpha': 1.2266,
-    'reg_lambda': 0.1141,
-    'max_depth': 12,
-    'scale_pos_weight': 19.56  # 2895/148 - xử lý class imbalance
-}
-```
-
-**Best F1-Score từ Optuna**: 0.5359
-
 ### 3.5. Mô hình Ensemble
 
 #### 3.5.1. Kiến trúc Stacking
@@ -208,19 +190,7 @@ Các đặc trưng tổng hợp domain-specific:
 - Early stopping: 50 rounds
 - Max boosting rounds: 2000
 
-**XGBoost Configuration**:
-```python
-{
-    'n_estimators': 2000,
-    'learning_rate': 0.03,
-    'max_depth': 8,
-    'subsample': 0.7,
-    'colsample_bytree': 0.7,
-    'scale_pos_weight': 19.56,
-    'tree_method': 'hist',
-    'eval_metric': 'logloss'
-}
-```
+**XGBoost Configuration**
 
 #### 3.5.3. Ensemble strategy
 - **Weighted average**: LightGBM (60%) + XGBoost (40%)
@@ -296,9 +266,6 @@ Các đặc trưng tổng hợp domain-specific:
 
 #### Kết quả cuối cùng:   F1 Score: 0.5199 và Optimal Threshold: 0.300, Public leaderboard: 0.6035
 ## 6. Kết luận
-
-### 6.1. Tóm tắt thành tựu
-
 ✅ **Xây dựng thành công pipeline hoàn chỉnh** cho bài toán phân loại TDE:
 - Feature engineering with physics knowledge
 - Advanced ensemble learning
@@ -313,10 +280,4 @@ Các đặc trưng tổng hợp domain-specific:
 - Variability features 
 - TDE physics (power-law) có hiệu quả cao
 - Multi-band information (colors, peak coherence) hiệu quả
-```
 
----
-
-**Báo cáo được tạo**: December 24, 2025  
-**Phiên bản**: 1.0  
-**Tác giả**: ML Team
