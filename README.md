@@ -5,7 +5,7 @@
 - **Thành viên**:
   - Nguyễn Văn Mạnh – 23021619
   - Lò Châu Minh – 23021627
-  - Trần Thành Nguyên – <vai trò>
+  - Trần Thành Nguyên – 
 
 ---
 ## 1. Giới thiệu
